@@ -1,0 +1,44 @@
+/* GLOBAL */
+#mainNav {
+    background-color: white;
+    padding: 0.5rem;
+}
+#mainNav li a {
+    display: inline-block;
+    padding: 0.5rem;
+}
+#mainNav li a:hover {
+    background-color: black;
+    color: white;
+}
+/* BLOG */
+.sidebar-list li a {
+    display: inline-block;
+    padding: 0.25rem 0.25rem;
+}
+.sidebar-list li a:hover {
+    color: white;
+    background-color: black;
+}
+.blog-content img {
+    padding: 1rem 0;
+}
+.blog-content p {
+    padding: 2rem 0;
+}
+.blog-content a {
+    padding: 2rem 0;
+}
+.blog-content a {
+    padding: 2rem 0;
+}
+/* FORM */
+.form label {
+    display: none;
+  }
+.form input, .form textarea {
+    width: 100%;
+    border: 1px solid black;
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem 0;
+}
