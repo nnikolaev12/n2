@@ -14,7 +14,7 @@ function HomeSubtitle()
 function Breadcrumbs( props )
 {
     let name = props.loc.substr( "1" );
-    console.log( name )
+
     return (
         <div className="mt-10">
             <span><Link href="/">home </Link></span>

@@ -13,7 +13,7 @@ function Home( { data } )
     return (
         <div>
             <Head>
-                <title>N2</title>
+                <title>Nikolay Nikolaev</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header h1="NIKOLAY NIKOLAEV" loc="/" />
@@ -72,7 +72,7 @@ function Home( { data } )
                 <div id="contact" className="w-full lg:w-1/2 mx-auto my-6">
                     <h2 className="text-4xl py-6 text-center"><span className="border-b border-black p-2">Contact Me</span></h2>
                     <div className="form">
-                        <form name="contact" method="POST" data-netlify="true">
+                        <form name="contact" method="POST" data-netlify="true" action="/success">
                         <div className="flex flex-row">
                             <div className="w-full pr-2">
                                 <label htmlFor="contactName">Your Name</label>
@@ -87,6 +87,7 @@ function Home( { data } )
                             <label htmlFor="contactMessage">Your Message</label>
                             <textarea name="message" id="contactMessage" rows="7" placeholder="Your Message"></textarea>
                         </div>
+                        <input type="hidden" name="form-name" value="contact" />
                         <button type="submit" className="inline-block px-4 py-2 border-black border hover:bg-black hover:text-white">SEND</button>
                         </form>
                     </div>

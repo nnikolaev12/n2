@@ -6,7 +6,7 @@ function Blog() {
   return (
     <div>
       <Head>
-        <title>Nikolay Nikolaev</title>
+        <title>Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header h1="Blog" loc="/blog" />
