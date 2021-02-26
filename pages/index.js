@@ -72,20 +72,20 @@ function Home( { data } )
                 <div id="contact" className="w-full lg:w-1/2 mx-auto my-6">
                     <h2 className="text-4xl py-6 text-center"><span className="border-b border-black p-2">Contact Me</span></h2>
                     <div className="form">
-                        <form method="POST" data-netlify="true">
+                        <form name="contact" method="POST" data-netlify="true">
                         <div className="flex flex-row">
                             <div className="w-full pr-2">
                                 <label htmlFor="contactName">Your Name</label>
-                                <input name="" id="contactName" type="text" placeholder="Your Name" />
+                                <input name="name" id="contactName" type="text" placeholder="Your Name" />
                             </div>
                             <div className="w-full pl-2">
                                 <label htmlFor="contactEmail">Your Email</label>
-                                <input name="" id="contactEmail" type="email" placeholder="Your Email" />
+                                <input name="email" id="contactEmail" type="email" placeholder="Your Email" />
                             </div>
                         </div>
                         <div>
                             <label htmlFor="contactMessage">Your Message</label>
-                            <textarea name="" id="contactMessage" rows="7" placeholder="Your Message"></textarea>
+                            <textarea name="message" id="contactMessage" rows="7" placeholder="Your Message"></textarea>
                         </div>
                         <button type="submit" className="inline-block px-4 py-2 border-black border hover:bg-black hover:text-white">SEND</button>
                         </form>
