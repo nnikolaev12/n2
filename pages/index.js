@@ -1,14 +1,18 @@
+// next.js
 import Head from 'next/head'
 import Link from 'next/link'
+
+// components
 import Header from '../components/header'
 import Footer from '../components/footer'
 import PortfolioItem from '../components/portfolio-item'
 
-function Home( { data } )
+// data
+import content from '../data/portfolio'
+
+function Home()
 {
-    const portfolioItems = data.map( (item) => 
-        <PortfolioItem key={item._id} data={item} />
-    );
+    const portfolioItems = content.slice(0, 3).map( (item) => <PortfolioItem key={item.id} data={item.data} /> );
 
     return (
         <div>
@@ -97,22 +101,6 @@ function Home( { data } )
         </div>
         
     )
-}
-
-export async function getStaticProps()
-{
-    // Call an external API endpoint to portfolio
-    const res = await fetch( `https://n2blog-1229.restdb.io/rest/portfolio?q={}&max=3`, {
-        cache: 'no-cache',
-        headers: {
-            'x-apikey': process.env.apikey,
-        }
-    } )
-    const data = await res.json()
-
-    return {
-        props: { data },
-    }
 }
 
 export default Home

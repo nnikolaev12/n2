@@ -1,4 +1,7 @@
 /* GLOBAL */
+.header-img {
+    background-image: url("/img/background.jpg");
+}
 #mainNav {
     background-color: white;
     padding: 0.5rem;

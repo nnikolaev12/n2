@@ -36,7 +36,6 @@ function SubH1( props )
 function Header( props )
 {
     // <li><Link href="/blog">Blog</Link></li>
-    
     return (
         <header className="px-4 py-2">
             <div className="flex flex-row justify-between py-4">
@@ -57,7 +56,7 @@ function Header( props )
                     </ul>
                 </nav>
             </div>
-            <div className="h-64 bg-cover text-center">
+            <div className="h-64 bg-cover text-center header-img">
                 <div className="bg-white bg-opacity-80 h-full py-10">
                     <h1 className="text-6xl">{ props.h1 }</h1>
                     <SubH1 loc={ props.loc } />
