@@ -6,13 +6,16 @@ import Link from 'next/link'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import PortfolioItem from '../components/portfolio-item'
+import ProjectItem from '../components/project-item'
 
 // data
-import content from '../data/portfolio'
+import portfolio from '../data/portfolio'
+import projects from '../data/projects'
 
 function Home()
 {
-    const portfolioItems = content.slice(0, 3).map( (item) => <PortfolioItem key={item.id} data={item.data} /> );
+    const portfolioItems = portfolio.slice(0, 6).map( (item) => <PortfolioItem key={item.id} data={item.data} /> );
+    const projectsItems = projects.map( (item) => <ProjectItem key={item.id} data={item.data} /> );
 
     return (
         <div>
@@ -21,81 +24,88 @@ function Home()
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header h1="NIKOLAY NIKOLAEV" loc="/" />
-            <main className="py-2 px-4">
-                <div id="about" className="w-full lg:w-1/2 mx-auto my-6">
-                    <h2 className="text-4xl py-6 text-center"><span className="border-b border-black p-2">About me</span></h2>
-                    <div className="flex flex-col lg:flex-row justify-center py-6">
-                        <div className="lg:w-1/2">
-                            <picture>
-                                <source srcSet="img/nikolay-nikolaev.webp" type="image/webp" />
-                                <source srcSet="img/nikolay-nikolaev.png" type="image/png" /> 
-                                <img className="mx-auto" width="300" height="300" src="img/nikolay-nikolaev.png" alt="N2 logo" />
-                            </picture>
-                        </div>
-                        <div className="lg:w-1/2 px-4 lg:px-0">
-                            <h3 className="text-2xl py-4">Hi, my name is Nikolay Nikolaev</h3>
-                            <p>Nikolay Nikolaev is an SEO expert and Web Developer experienced in building and optimizing websites for businesses and individuals. His strong background in SEO and self-taught web development skills have helped him push successful web projects for years now.</p>
-                            <a className="inline-block px-4 py-2 mt-4 border-black border hover:bg-black hover:text-white" href="#contact">Contact</a>
-                        </div>
-                    </div>
-                </div>
-                <div className="w-full lg:w-1/2 mx-auto my-6">
-                    <h2 className="text-4xl py-6 text-center"><span className="border-b border-black p-2">How Can I Help</span></h2>
-                    <div className="grid grid-cols-1 lg:grid-cols-6">
-                        <div className="col-span-3 border border-black m-4 text-center bg-gray-100 py-12">
-                            <h3 className="text-3xl">SEO</h3>
-                            <p className="text-lg mt-2">Technical, On-site</p>
-                        </div>
-                        <div className="col-span-3 border border-black m-4 text-center bg-gray-100 py-12">
-                            <h3 className="text-3xl">Web Development</h3>
-                            <p className="text-lg mt-2">HTML, CSS, PHP, JavaScript, SQL</p>
-                        </div>
-                        <div className="col-span-2 border border-black m-4 text-center bg-gray-100 py-12">
-                            <h3 className="text-3xl">Specialization</h3>
-                            <p className="text-lg mt-2">WordPress, Laravel, React</p>
-                        </div>
-                        <div className="col-span-2 border border-black m-4 text-center bg-gray-100 py-12">
-                            <h3 className="text-3xl">Automation</h3>
-                            <p className="text-lg mt-2">Python, Spreadsheets</p>
-                        </div>
-                        <div className="col-span-2 border border-black m-4 text-center bg-gray-100 py-12">
-                            <h3 className="text-3xl">Consultation</h3>
-                            <p className="text-lg mt-2">Long-term strategy, Advice</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="portfolio" className="w-full lg:w-1/2 mx-auto my-6">
-                    <h2 className="text-4xl py-6 text-center"><span className="border-b border-black p-2">My Portfolio</span></h2>
-                    <div>
-                        { portfolioItems }
-                        <div className="text-center mt-10">
-                            <Link href="/portfolio"><button className="inline-block px-4 py-2 border-black border hover:bg-black hover:text-white">SEE ALL</button></Link>
-                        </div>
-                    </div>
-                </div>
-                <div id="contact" className="w-full lg:w-1/2 mx-auto my-6">
-                    <h2 className="text-4xl py-6 text-center"><span className="border-b border-black p-2">Contact Me</span></h2>
-                    <div className="form">
-                        <form name="contact" method="POST" data-netlify="true" action="/success">
-                        <div className="flex flex-row">
-                            <div className="w-full pr-2">
-                                <label htmlFor="contactName">Your Name</label>
-                                <input name="name" id="contactName" type="text" placeholder="Your Name" />
+            <main className="mt-48 py-10">
+                <section id="about">
+                    <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 py-10">
+                        <h2 className="text-3xl uppercase tracking-widest mb-4 heading">About me</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 py-10">
+                            <div className="mx-4 my-4 md:my-0">
+                                <p className="h-40 rounded p-4 bg-black text-white">
+                                    <span className="text-xl font-extrabold">&gt; </span>
+                                    <span className="intro"></span>
+                                </p>
                             </div>
-                            <div className="w-full pl-2">
-                                <label htmlFor="contactEmail">Your Email</label>
-                                <input name="email" id="contactEmail" type="email" placeholder="Your Email" />
+                            <div className="mx-4 my-4 md:my-0 text-center">
+                                <p className="italic mb-4">Check me up here and there</p>
+                                <a className="inline-block mr-2 p-2 border border-black" href="https://www.linkedin.com/in/nikolay-nikolaev-78992268/" rel="nofollow noopener noreferrer">
+                                    <picture>
+                                        <source srcSet="img/linkedin-icon.webp" type="image/webp" />
+                                        <source srcSet="img/linkedin-icon.png" type="image/png" />
+                                        <img width="30" height="30" src="img/linkedin-icon.png" alt="Linked In icon" />
+                                    </picture>
+                                </a>
+                                <a className="inline-block mr-2 p-2 border border-black" href="https://twitter.com/nnikolaev12" rel="nofollow noopener noreferrer">
+                                    <picture>
+                                        <source srcSet="img/twitter-icon.webp" type="image/webp" />
+                                        <source srcSet="img/twitter-icon.png" type="image/png" />
+                                        <img width="30" height="30" src="img/twitter-icon.png" alt="Twitter icon" />
+                                    </picture>
+                                </a>
+                                <a className="inline-block mr-2 p-2 border border-black" href="https://github.com/hitmanbg" rel="nofollow noopener noreferrer">
+                                    <picture>
+                                        <source srcSet="img/github-icon.webp" type="image/webp" />
+                                        <source srcSet="img/github-icon.png" type="image/png" />
+                                        <img width="30" height="30" src="img/github-icon.png" alt="Github icon" />
+                                    </picture>
+                                </a>
                             </div>
                         </div>
-                        <div>
-                            <label htmlFor="contactMessage">Your Message</label>
-                            <textarea name="message" id="contactMessage" rows="7" placeholder="Your Message"></textarea>
-                        </div>
-                        <input type="hidden" name="form-name" value="contact" />
-                        <button type="submit" className="inline-block px-4 py-2 border-black border hover:bg-black hover:text-white">SEND</button>
-                        </form>
                     </div>
-                </div>
+                </section>
+                <section id="projects">
+                    <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 py-10">
+                        <h2 className="text-3xl uppercase tracking-widest mb-4 heading">My projects</h2>
+                        <div className="py-10">
+                            { projectsItems }
+                        </div>
+                    </div>
+                </section>
+                <section id="work">
+                    <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 py-10">
+                        <h2 className="text-3xl uppercase tracking-widest mb-4 heading">My work</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10">
+                            { portfolioItems }
+                        </div>
+                        <div class="text-center">
+                            <Link href="/portfolio"><button class="button">See all</button></Link>
+                        </div>
+                    </div>
+                </section>
+                <section id="contact">
+                    <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 py-10">
+                        <h2 className="text-2xl uppercase tracking-widest mb-4 heading">Contact me</h2>
+                        <div className="form">
+                            <form name="contact" method="POST" action="/success">
+                                <div className="flex flex-row">
+                                    <div className="w-full pr-2">
+                                        <label htmlFor="contactName">Your Name</label>
+                                        <input type="text" name="name" id="contactName" placeholder="Your Name" />
+                                    </div>
+                                    <div className="w-full pl-2">
+                                        <label htmlFor="contactEmail">Your Email</label>
+                                        <input type="email" name="email" id="contactEmail" placeholder="Your Email" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <label htmlFor="contactMessage">Your Message</label>
+                                    <textarea name="message" id="contactMessage" rows="7" placeholder="Your Message"></textarea>
+                                </div>
+                                <input type="hidden" name="form-name" value="contact"/>
+                                <button type="submit" className="button">SEND</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
             </main>
             <Footer />
         </div>

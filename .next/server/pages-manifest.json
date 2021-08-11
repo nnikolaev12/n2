@@ -1,11 +1,7 @@
 {
   "/_app": "pages/_app.js",
-  "/blog/[slug]": "pages/blog/[slug].js",
-  "/blog": "pages/blog.html",
-  "/": "pages/index.html",
-  "/portfolio": "pages/portfolio.html",
-  "/success": "pages/success.html",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
+  "/": "pages/index.js",
+  "/portfolio": "pages/portfolio.js"
 }

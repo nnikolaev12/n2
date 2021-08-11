@@ -1,41 +1,38 @@
-/* GLOBAL */
-.header-img {
-    background-image: url("/img/background.jpg");
+body {
+    background-color: rgba(229, 231, 235);
 }
-#mainNav {
+.tile:after {
+    content: "";
+    position: absolute;
+    background-image: url('/img/background-cropped.jpg');
+    background-size: cover;
+    right: 0;
+    height: 12rem;
+    z-index: -1;
+    left: 0;
+    -webkit-transform-origin: 100%;
+    transform-origin: 100%;
+    -webkit-transform: skewY(3deg);
+    transform: skewY(3deg);
+}
+.heading:after {
+    content: "";
+    width: 5rem;
+    border-bottom: 1px solid black;
+}
+.button {
+    display: inline-block;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+.button:hover {
     background-color: white;
-    padding: 0.5rem;
+    color: black;
 }
-#mainNav li a {
-    display: inline-block;
-    padding: 0.5rem;
-}
-#mainNav li a:hover {
-    background-color: black;
-    color: white;
-}
-/* BLOG */
-.sidebar-list li a {
-    display: inline-block;
-    padding: 0.25rem 0.25rem;
-}
-.sidebar-list li a:hover {
-    color: white;
-    background-color: black;
-}
-.blog-content img {
-    padding: 1rem 0;
-}
-.blog-content p {
-    padding: 2rem 0;
-}
-.blog-content a {
-    padding: 2rem 0;
-}
-.blog-content a {
-    padding: 2rem 0;
-}
-/* FORM */
 .form label {
     display: none;
   }
@@ -44,4 +41,7 @@
     border: 1px solid black;
     padding: 0.25rem 0.5rem;
     margin: 0.25rem 0;
+}
+.csw {
+    background-image: url('/img/projects/colins-sash-windows.jpg');
 }

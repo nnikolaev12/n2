@@ -8,6 +8,22 @@ export default [
         }
     },
     {
+        "id": "fg",
+        "data": {
+            "title": "Fantasic Gardeners",
+            "url": "https://www.fantasticgardeners.co.uk/",
+            "thumbnail": "fantastic-gardeners.jpg"
+        }
+    },
+    {
+        "id": "aa",
+        "data": {
+            "title": "Academy Achievers",
+            "url": "https://academyachievers.co.uk/",
+            "thumbnail": "academy-achievers.jpg"
+        }
+    },
+    {
         "id": "csw",
         "data": {
             "title": "Colin's Sash Windows",
@@ -16,11 +32,11 @@ export default [
         }
     },
     {
-        "id": "sr",
+        "id": "mnya",
         "data": {
-            "title": "Sleep Restfully - Blog",
-            "url": "https://www.sleeprestfully.com/blog/",
-            "thumbnail": "sleeprestfully-blog.jpg"
+            "title": "Manyache",
+            "url": "https://manyache.com/",
+            "thumbnail": "manyache.jpg"
         }
     },
     {
@@ -29,6 +45,14 @@ export default [
             "title": "Sematigo",
             "url": "https://sematigo.com/",
             "thumbnail": "sematigo.jpg"
+        }
+    },
+    {
+        "id": "sr",
+        "data": {
+            "title": "Sleep Restfully - Blog",
+            "url": "https://www.sleeprestfully.com/blog/",
+            "thumbnail": "sleeprestfully-blog.jpg"
         }
     },
     {
@@ -44,7 +68,7 @@ export default [
         "data": {
             "title": "Natural Care 4 U - Blog",
             "url": "https://www.naturalcare4u.com/blog/",
-            "thumbnail": "naturalcare4u-blog.jpg"
+            "thumbnail": "natural-care-4-u.jpg"
         }
     },
     {
@@ -52,9 +76,10 @@ export default [
         "data": {
             "title": "Poker Academy Bulgaria",
             "url": "https://pokeracademy.bg/",
-            "thumbnail": "poker-academy-bg.jpg"
+            "thumbnail": "poker-academy.jpg"
         }
     },
+    /*
     {
         "id": "tsyr",
         "data": {
@@ -63,4 +88,5 @@ export default [
             "thumbnail": "the-six-yard-ring.jpg"
         }
     },
+    */
 ]

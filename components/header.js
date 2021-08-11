@@ -1,16 +1,6 @@
 import Link from 'next/link'
 
-function HomeSubtitle()
-{
-    return (
-        <div className="mt-10">
-            <span>/SEO Specialist </span>
-            <span>/Web Developer </span>
-            <span>/Entrepreneur </span>
-        </div>
-    )
-}
-
+/*
 function Breadcrumbs( props )
 {
     let name = props.loc.substr( "1" );
@@ -23,43 +13,33 @@ function Breadcrumbs( props )
     )
 }
 
+
 function SubH1( props )
 {
-    if ( props.loc === "/" )
-    {
-        return <HomeSubtitle />
-    }
-
     return <Breadcrumbs loc={ props.loc } />
 }
+*/
 
 function Header( props )
 {
-    // <li><Link href="/blog">Blog</Link></li>
     return (
-        <header className="px-4 py-2">
-            <div className="flex flex-row justify-between py-4">
-                <Link href="/">
-                    <picture>
-                        <source srcSet="img/logo.webp" type="image/webp" />
-                        <source srcSet="img/logo.png" type="image/png" />
-                        <img width="40" height="40" src="img/logo.png" alt="N2 logo"/>
-                    </picture>
-                </Link>
-                <nav>
-                    <button id="toggleNav" className="lg:hidden">&#9776;</button>
-                    <ul id="mainNav" className="hidden lg:flex flex-col lg:flex-row absolute right-0">
-                        <li><Link href="/">Home</Link></li>
-                        <li><Link href="/#about">About</Link></li>
-                        <li><Link href="/#portfolio">Portfolio</Link></li>
-                        <li><Link href="/#contact">Contact</Link></li>
-                    </ul>
-                </nav>
-            </div>
-            <div className="h-64 bg-cover text-center header-img">
-                <div className="bg-white bg-opacity-80 h-full py-10">
-                    <h1 className="text-6xl">{ props.h1 }</h1>
-                    <SubH1 loc={ props.loc } />
+        <header>
+            <div className="bg-black tile">
+                <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 py-14">
+                    <div className="flex flex-row relative">
+                        <h1 className="flex flex-col text-xl text-white pl-6">
+                            <span>Nikolay Nikolaev</span>
+                            <span className="text-gray-300">// Web Developer</span>
+                            <span className="text-gray-300">// SEO Expert</span>
+                        </h1>
+                        <div className="bg-white rounded-full absolute top-24 sm:top-0 right-0">
+                            <picture>
+                                <source srcSet="img/nikolay-nikolaev.png" type="image/webp" />
+                                <source srcSet="img/nikolay-nikolaev.png" type="image/png" />
+                                <img width="200" height="200" src="" alt="Nikolay Nikolaev" />
+                            </picture>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>

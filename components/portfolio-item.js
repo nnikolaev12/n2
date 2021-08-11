@@ -1,20 +1,17 @@
 function PortfolioItem( props )
 {
-    const projects_dir = process.env.projectsDir
-    const jpg = projects_dir + props.data.thumbnail
+    const images_dir = process.env.imagesDir
+    const jpg = images_dir + "work/" + props.data.thumbnail
     const webp = jpg.slice(0,-3) + "webp"
 
     return (
-        <div className="my-8 relative">
-            <a href={props.data.url} title={ props.data.title }>
-                <picture>
-                    <source srcSet={ webp } type="image/webp" />
-                    <source srcSet={ jpg } type="image/jpg" /> 
-                    <img width="900" height="450" srcSet={ jpg } alt={ props.data.title } />
-                </picture>
-            </a>
-            <a href={props.data.url} className="inline-block p-4 text-xl bg-white bg-opacity-70 border border-black absolute bottom-0">{ props.data.title }</a>
-            
+        <div className="relative m-2">
+            <picture>
+                <source srcSet={ webp } type="image/webp" />
+                <source srcSet={ jpg } type="image/jpg" /> 
+                <img width="900" height="900" srcSet={ jpg } alt={ props.data.title } />
+            </picture>
+            <a className="bg-black bg-opacity-80 p-6 text-white uppercase tracking-wider absolute bottom-0 w-full" href={props.data.url} title={ props.data.title }>{ props.data.title } <span className="text-2xl">&#10132;</span></a>
         </div>
     )
 }
