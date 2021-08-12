@@ -34,9 +34,9 @@ function Header( props )
                         </h1>
                         <div className="bg-white rounded-full absolute top-24 sm:top-0 right-0">
                             <picture>
-                                <source srcSet="img/nikolay-nikolaev.png" type="image/webp" />
+                                <source srcSet="img/nikolay-nikolaev.webp" type="image/webp" />
                                 <source srcSet="img/nikolay-nikolaev.png" type="image/png" />
-                                <img width="200" height="200" src="" alt="Nikolay Nikolaev" />
+                                <img width="200" height="200" src="img/nikolay-nikolaev.png" alt="Nikolay Nikolaev" />
                             </picture>
                         </div>
                     </div>

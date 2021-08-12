@@ -4,7 +4,7 @@ body {
 .tile:after {
     content: "";
     position: absolute;
-    background-image: url('/img/background-cropped.jpg');
+    background-image: url('/img/background.webp');
     background-size: cover;
     right: 0;
     height: 12rem;
@@ -41,7 +41,4 @@ body {
     border: 1px solid black;
     padding: 0.25rem 0.5rem;
     margin: 0.25rem 0;
-}
-.csw {
-    background-image: url('/img/projects/colins-sash-windows.jpg');
 }
