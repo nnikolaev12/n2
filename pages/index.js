@@ -85,7 +85,7 @@ function Home()
                     <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6 py-10">
                         <h2 className="text-2xl uppercase tracking-widest mb-4 heading">Contact me</h2>
                         <div className="form">
-                            <form name="contact" method="POST" action="/success">
+                            <form name="contact" method="POST" data-netlify="true">
                                 <div className="flex flex-row">
                                     <div className="w-full pr-2">
                                         <label htmlFor="contactName">Your Name</label>

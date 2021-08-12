@@ -5,7 +5,7 @@ export default [
             "title": "Ultimate Poker Coaching",
             "url": "https://ultimatepokercoaching.com/",
             "thumbnail": "ultimate-poker-coaching-logo.png",
-            "description": "Ultimate Poker Coaching is website where poker enthusiasts can find professional coaching services by top professionals and improve their skills. ",
+            "description": "Ultimate Poker Coaching is platform where poker enthusiasts can find professional coaching services by top professionals and improve their skills. The web site is build on WordPress with a mix of custom and off-the-shelf functionality.",
             "tech": [
                 "WordPress",
                 "TailWind CSS",
@@ -20,7 +20,7 @@ export default [
             "title": "Nyxit Soft",
             "url": "https://nyxitsoft.com/",
             "thumbnail": "nyxit-soft-logo.png",
-            "description": "Nyxit Soft is a website offering WordPress development and SEO services to Bulgarian businesses and individuals.",
+            "description": "Nyxit Soft is a business website offering WordPress development and SEO services in Bulgaria. It's build with a custom WP theme and SEO plugin.",
             "tech": [
                 "WordPress",
                 "TailWind CSS",
