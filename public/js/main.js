@@ -7,13 +7,18 @@ document.addEventListener("DOMContentLoaded", function()
 
     document.querySelector("form").addEventListener("submit", function( e ) {
         e.preventDefault()
-        let form = document.getElementById('contact');
+
+        let form = document.getElementById('primaryForm');
         let formData = new FormData(form)
+        let text = "Something went wrong. Please, try again later or reach me out at nikolay.nikolaev25@gmail.com"
+
         fetch('/', {
             method: 'POST',
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString()
-        }).then(() => console.log('Form successfully submitted')).catch((error) =>
-        alert(error))
+        }).then(() => text = "Your message has been sent." )
+        // .catch( (error) =>  )
+
+        document.getElementById("formMessage").textContent = text
     } );
 } );
