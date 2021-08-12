@@ -10,15 +10,16 @@ document.addEventListener("DOMContentLoaded", function()
 
         let form = document.getElementById('primaryForm');
         let formData = new FormData(form)
-        let text = "Something went wrong. Please, try again later or reach me out at nikolay.nikolaev25@gmail.com"
-
+        let formMessage = document.getElementById("formMessage")
+        
         fetch('/', {
             method: 'POST',
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString()
-        }).then(() => text = "Your message has been sent." )
-        // .catch( (error) =>  )
-
-        document.getElementById("formMessage").textContent = text
+        }).then( function() {
+            formMessage.textContent = "Your message has been sent.";
+        } ).catch( function (error) {
+            formMessage.textContent = "Something went wrong. Please, try again later or reach me out at nikolay.nikolaev25@gmail.com";
+        } )
     } );
 } );
