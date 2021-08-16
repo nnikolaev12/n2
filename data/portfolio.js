@@ -16,6 +16,14 @@ export default [
         }
     },
     {
+        "id": "sr",
+        "data": {
+            "title": "Sleep Restfully",
+            "url": "https://www.sleeprestfully.com/",
+            "thumbnail": "sleeprestfully.jpg"
+        }
+    },
+    {
         "id": "aa",
         "data": {
             "title": "Academy Achievers",
@@ -48,14 +56,6 @@ export default [
         }
     },
     {
-        "id": "sr",
-        "data": {
-            "title": "Sleep Restfully - Blog",
-            "url": "https://www.sleeprestfully.com/blog/",
-            "thumbnail": "sleeprestfully-blog.jpg"
-        }
-    },
-    {
         "id": "kmdp",
         "data": {
             "title": "KMD Project",
@@ -77,6 +77,14 @@ export default [
             "title": "Poker Academy Bulgaria",
             "url": "https://pokeracademy.bg/",
             "thumbnail": "poker-academy.jpg"
+        }
+    },
+    {
+        "id": "dkg",
+        "data": {
+            "title": "DK Group",
+            "url": "https://dkgroup.bg/",
+            "thumbnail": "dk-group.jpg"
         }
     },
     /*
