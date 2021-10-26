@@ -2,6 +2,14 @@ export default [
     {
         "id": "upc",
         "data": {
+            "title": "Sensity AI",
+            "url": "https://sensity.ai/",
+            "thumbnail": "sensity-ai.jpg"
+        }
+    },
+    {
+        "id": "upc",
+        "data": {
             "title": "Ultimate Poker Coaching",
             "url": "https://ultimatepokercoaching.com/",
             "thumbnail": "ultimate-poker-coaching.jpg"
