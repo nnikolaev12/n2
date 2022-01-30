@@ -37,21 +37,14 @@ function Home()
                             </div>
                             <div className="mx-4 my-4 md:my-0 text-center">
                                 <p className="italic mb-4">Check me up here and there</p>
-                                <a className="inline-block mr-2 p-2 border border-black" href="https://www.linkedin.com/in/nikolay-nikolaev-78992268/" rel="nofollow noopener noreferrer">
+                                <a className="inline-block mr-2 p-2 border border-black" href="https://www.linkedin.com/in/nikolay-nikolaev-78992268/" target="_blank" rel="nofollow noopener noreferrer">
                                     <picture>
                                         <source srcSet="img/linkedin-icon.webp" type="image/webp" />
                                         <source srcSet="img/linkedin-icon.png" type="image/png" />
                                         <img width="30" height="30" src="img/linkedin-icon.png" alt="Linked In icon" />
                                     </picture>
                                 </a>
-                                <a className="inline-block mr-2 p-2 border border-black" href="https://twitter.com/nnikolaev12" rel="nofollow noopener noreferrer">
-                                    <picture>
-                                        <source srcSet="img/twitter-icon.webp" type="image/webp" />
-                                        <source srcSet="img/twitter-icon.png" type="image/png" />
-                                        <img width="30" height="30" src="img/twitter-icon.png" alt="Twitter icon" />
-                                    </picture>
-                                </a>
-                                <a className="inline-block mr-2 p-2 border border-black" href="https://github.com/hitmanbg" rel="nofollow noopener noreferrer">
+                                <a className="inline-block mr-2 p-2 border border-black" href="https://github.com/nnikolaev12" target="_blank" rel="nofollow noopener noreferrer">
                                     <picture>
                                         <source srcSet="img/github-icon.webp" type="image/webp" />
                                         <source srcSet="img/github-icon.png" type="image/png" />

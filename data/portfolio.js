@@ -1,6 +1,6 @@
 export default [
     {
-        "id": "upc",
+        "id": 0,
         "data": {
             "title": "Sensity AI",
             "url": "https://sensity.ai/",
@@ -8,7 +8,7 @@ export default [
         }
     },
     {
-        "id": "upc",
+        "id": 1,
         "data": {
             "title": "Ultimate Poker Coaching",
             "url": "https://ultimatepokercoaching.com/",
@@ -16,7 +16,7 @@ export default [
         }
     },
     {
-        "id": "fg",
+        "id": 2,
         "data": {
             "title": "Fantasic Gardeners",
             "url": "https://www.fantasticgardeners.co.uk/",
@@ -24,23 +24,25 @@ export default [
         }
     },
     {
-        "id": "sr",
+        "id": 3,
         "data": {
             "title": "Sleep Restfully",
             "url": "https://www.sleeprestfully.com/",
             "thumbnail": "sleeprestfully.jpg"
         }
     },
+    /*
     {
-        "id": "aa",
+        "id": 4,
         "data": {
             "title": "Academy Achievers",
             "url": "https://academyachievers.co.uk/",
             "thumbnail": "academy-achievers.jpg"
         }
     },
+    */
     {
-        "id": "csw",
+        "id": 5,
         "data": {
             "title": "Colin's Sash Windows",
             "url": "https://colinssashwindows.co.uk/",
@@ -48,7 +50,7 @@ export default [
         }
     },
     {
-        "id": "mnya",
+        "id": 6,
         "data": {
             "title": "Manyache",
             "url": "https://manyache.com/",
@@ -56,7 +58,7 @@ export default [
         }
     },
     {
-        "id": "smtg",
+        "id": 7,
         "data": {
             "title": "Sematigo",
             "url": "https://sematigo.com/",
@@ -64,7 +66,7 @@ export default [
         }
     },
     {
-        "id": "kmdp",
+        "id": 8,
         "data": {
             "title": "KMD Project",
             "url": "https://kmd-project.com/",
@@ -72,7 +74,7 @@ export default [
         }
     },
     {
-        "id": "nc4u",
+        "id": 9,
         "data": {
             "title": "Natural Care 4 U - Blog",
             "url": "https://www.naturalcare4u.com/blog/",
@@ -80,7 +82,7 @@ export default [
         }
     },
     {
-        "id": "pab",
+        "id": 10,
         "data": {
             "title": "Poker Academy Bulgaria",
             "url": "https://pokeracademy.bg/",
@@ -88,7 +90,7 @@ export default [
         }
     },
     {
-        "id": "dkg",
+        "id": 11,
         "data": {
             "title": "DK Group",
             "url": "https://dkgroup.bg/",
@@ -97,7 +99,7 @@ export default [
     },
     /*
     {
-        "id": "tsyr",
+        "id": 12,
         "data": {
             "title": "The Six Yard Ring",
             "url": "https://thesixyardring.com/",

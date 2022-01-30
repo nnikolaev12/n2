@@ -1,36 +1,35 @@
 export default [
     {
-        "id": 1,
+        "id": 0,
         "data": {
             "title": "Ultimate Poker Coaching",
             "url": "https://ultimatepokercoaching.com/",
             "thumbnail": "ultimate-poker-coaching-logo.png",
-            "description": "Ultimate Poker Coaching is platform where poker enthusiasts can find professional coaching services by top professionals and improve their skills. The web site is build on WordPress with a mix of custom and off-the-shelf functionality.",
+            "description": "Ultimate Poker Coaching is platform where poker enthusiasts can find professional coaching services by top professionals and improve their skills. The front of the website is powered by WordPress while Laravel is supporting the coaching administration back-end system",
+            "tech": [
+                "WordPress",
+                "Laravel",
+                "TailWind CSS",
+                "Glide JS",
+            ],
+        }
+    },
+    {
+        "id": 1,
+        "data": {
+            "title": "Nyxit Soft",
+            "url": "https://nyxitsoft.com/",
+            "thumbnail": "nyxit-soft-logo.png",
+            "description": "Nyxit Soft is a business website offering web development and SEO services in Bulgaria.",
             "tech": [
                 "WordPress",
                 "TailWind CSS",
-                "Glide JS",
-                "SEO",
+                "Particles JS",
             ],
         }
     },
     {
         "id": 2,
-        "data": {
-            "title": "Nyxit Soft",
-            "url": "https://nyxitsoft.com/",
-            "thumbnail": "nyxit-soft-logo.png",
-            "description": "Nyxit Soft is a business website offering WordPress development and SEO services in Bulgaria. It's build with a custom WP theme and SEO plugin.",
-            "tech": [
-                "WordPress",
-                "TailWind CSS",
-                "Particles JS",
-                "SEO",
-            ],
-        }
-    },
-    {
-        "id": 3,
         "data": {
             "title": "Nikolay Nikolaev",
             "url": "#",
