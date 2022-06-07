@@ -8,6 +8,9 @@ import Footer from '../components/footer'
 import PortfolioItem from '../components/portfolio-item'
 import ProjectItem from '../components/project-item'
 
+// typed.js
+import Typed from 'typed.js';
+
 // data
 import portfolio from '../data/portfolio'
 import projects from '../data/projects'
@@ -31,8 +34,8 @@ function Home()
                         <div className="grid grid-cols-1 md:grid-cols-2 py-10">
                             <div className="mx-4 my-4 md:my-0">
                                 <p className="h-40 rounded p-4 bg-black text-white">
-                                    <span className="text-xl font-extrabold">&gt; </span>
-                                    <span className="intro"></span>
+                                    <span className="text-xl bold">&gt; </span>
+                                    <span className="intro"> Hi, I am Nick and I am a web developer and SEO expert. I love to build simple, optimized, and scalable web solutions.</span>
                                 </p>
                             </div>
                             <div className="mx-4 my-4 md:my-0 text-center">

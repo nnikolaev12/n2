@@ -8,9 +8,7 @@ export default [
             "description": "Ultimate Poker Coaching is platform where poker enthusiasts can find professional coaching services by top professionals and improve their skills. The front of the website is powered by WordPress while Laravel is supporting the coaching administration back-end system",
             "tech": [
                 "WordPress",
-                "Laravel",
                 "TailWind CSS",
-                "Glide JS",
             ],
         }
     },
@@ -36,9 +34,8 @@ export default [
             "thumbnail": "n2-logo.png",
             "description": "This website right here! It's content is passed in as JSON data, easily maintainable by auto-generating components.",
             "tech": [
-                "React",
+                "Next.js",
                 "Tailwind CSS",
-                "Typed.js",
             ],
         }
     },

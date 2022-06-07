@@ -1,10 +1,5 @@
 document.addEventListener("DOMContentLoaded", function()
 {
-    const typed_intro = new Typed('.intro', {
-        strings: ["Hi, I am Nick and I am a web developer and SEO expert. I love to build simple, optimized, and scalable web solutions."],
-        typeSpeed: 50
-    });
-
     document.querySelector("form").addEventListener("submit", function( e ) {
         e.preventDefault()
 
